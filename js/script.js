@@ -27,5 +27,50 @@
         <input type="text" class="bg-warning">
     </div> */
 
-   
+    document.addEventListener('DOMContentLoaded', function() {
+        const wrapper = document.getElementById('wrapper');
+        const resultInput = document.querySelector('#result input');
+    
+        function generateRandomNumbers() {
+            let numbers = [];
+            while (numbers.length < 5) {
+                let randomNumber = Math.floor(Math.random() * 100) + 1;
+                if (!numbers.includes(randomNumber)) {
+                    numbers.push(randomNumber);
+                }
+            }
+            return numbers;
+        }
+    
+        function displayNumbers(numbers) {
+            wrapper.innerHTML = '';
+            numbers.forEach(number => {
+                const box = document.createElement('div');
+                box.classList.add('box');
+                box.textContent = number;
+                wrapper.appendChild(box);
+            });
+        }
+    
+        function startGame() {
+            const numbers = generateRandomNumbers();
+            displayNumbers(numbers);
+            setTimeout(function() {
+                wrapper.innerHTML = '';
+                let guessedNumbers = [];
+                for (let i = 0; i < 5; i++) {
+                    const guess = parseInt(prompt(`Enter number ${i + 1}`));
+                    guessedNumbers.push(guess);
+                }
+                const correctNumbers = numbers.filter(num => guessedNumbers.includes(num));
+                resultInput.value = `Correct numbers: ${correctNumbers.length} (${correctNumbers.join(', ')})`;
+            }, 30000);
+            setTimeout(function() {
+                wrapper.innerHTML = '';
+            }, 30000);
+        }
+    
+        const playButton = document.getElementById('play-button');
+        playButton.addEventListener('click', startGame);
+    });
 
