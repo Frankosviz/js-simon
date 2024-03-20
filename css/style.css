@@ -1,7 +1,7 @@
 #wrapper {
     margin: 0 auto;
     width: 1000px;
-    height: 90vh;
+    height: 80vh;
     background-color: black;
     display: flex;
     
@@ -31,5 +31,9 @@
     width: 1000px;
     margin: 0 auto;
     background-color: black;
+    height: 10vh;
+}
+
+nav {
     height: 10vh;
 }
