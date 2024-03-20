@@ -1,0 +1,28 @@
+#wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color:red;
+    cursor: crosshair;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+#result {
+    
+}
