@@ -6,5 +6,26 @@
 
 // Inizio a generare la funzione che mi restituisce i numeri casuali tra 1 e 100
 
-let numeri = 100;
+// template
+
+/* <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">JS Simon</a>
+            <a class="btn btn-dark btn-sm " href="#" role="button"> Play </a>
+
+            
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="result" class="d-flex justify-content-center align-content-center pb-3">
+        <input type="text" class="bg-warning">
+    </div> */
+
+   
 
